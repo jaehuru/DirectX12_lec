@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+
+# Output 디렉토리 무시
+Output/
+
+# Engine/x64 디렉토리 무시
+Engine/x64/
+
+# Client/x64 디렉토리 무시
+Client/x64/
+
+# Visual Studio 관련 파일/폴더 무시
+.vs/
+
