@@ -47,3 +47,4 @@ private:
 	shared_ptr<TableDescriptorHeap> _tableDescHeap;
 	shared_ptr<DepthStencilBuffer> _depthStencilBuffer;
 };
+
