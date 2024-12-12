@@ -20,6 +20,9 @@
     <Filter Include="Manager">
       <UniqueIdentifier>{116e03e8-f5c1-4c4d-a480-a8e4333e0ced}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameObject\Test">
+      <UniqueIdentifier>{6edb2dcc-3dd1-4fee-9a76-313d43525445}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -94,6 +97,15 @@
     <ClInclude Include="Scene.h">
       <Filter>Manager</Filter>
     </ClInclude>
+    <ClInclude Include="TestCameraScript.h">
+      <Filter>GameObject\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -165,10 +177,24 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Manager</Filter>
     </ClCompile>
+    <ClCompile Include="TestCameraScript.cpp">
+      <Filter>GameObject\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMath.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\Resources\Shader\default.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>Utils</Filter>
+    </None>
   </ItemGroup>
 </Project>
