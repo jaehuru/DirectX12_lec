@@ -88,6 +88,10 @@ DirectX는 GPU와 데이터를 주고받는 다양한 방식을 제공합니다.
 
 #### 1) **디바이스와 디바이스 컨텍스트 생성**:
 - **목적**: GPU와의 소통을 시작하려면 DirectX 디바이스(ID3D11Device)와 디바이스 컨텍스트(ID3D11DeviceContext)를 생성해야 합니다.
+```cpp
+ID3D11Device* device = nullptr;
+ID3D11DeviceContext* context = nullptr;
+D3D11CreateDevice(..., &device, ..., &context);
 
 #### 2) **버퍼 관리**:
 - **목적**: 버텍스 버퍼, 인덱스 버퍼, 상수 버퍼를 GPU에 업로드하고 사용하는 방식.
@@ -98,7 +102,7 @@ DirectX는 GPU와 데이터를 주고받는 다양한 방식을 제공합니다.
 #### 3) **리소스와 셰이더 간의 연결**:
 - 셰이더가 데이터를 처리하려면 GPU 리소스(텍스처, 버퍼 등)와 연결되어야 합니다.
 - 예: ID3D11ShaderResourceView로 텍스처 연결.
-
+```
 ---
 
 ### 3. **DirectX의 주요 구성 요소**
